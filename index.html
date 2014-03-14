@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>What's the time on Wurstmineberg?</title>
+        <link href="assets/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="What's the time on Wurstmineberg?" />
+        <meta name="author" content="Wurstmineberg" />
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="time-caption">The time is <abbr id="time-hour" data-placement="left" title="One hour has 50 real life seconds.">??</abbr>:<abbr data-placement="right" id="time-second" title="One minute represents one real second.">??</abbr></h1>
+            <div class="clock">
+                <img src="assets/clock.png" alt="" class="frame">
+                <img src="assets/dial.png" alt="" class="dial">
+            </div>
+            <p><span id="time-tick"></span> ticks</p>
+
+            <h1 id="date-caption">The date is <abbr id="date-day" title="One day has 24 hours and starts at the end of sunrise."></abbr> of <abbr id="date-month" title="One month has 8 days and represents a full moon phase."></abbr> <abbr id="date-year" title="One Minecraft year has 9 months and represents a full real day."></abbr></h1>
+            <div class="moon">
+                <img src="assets/transparent.png" alt="" class="moon-phase img-rounded">
+            </div>
+            <p id="ticks-text"></p>
+            <p>For an explanation on the units of time, check out <a href="//wiki.wurstmineberg.de/Time" target="_blank" rel="help">our wiki</a>.</p>
+            <hr/>
+            
+            <footer>
+                <p class="muted text-center"><a href="http://wurstmineberg.de">In case you're wondering what this is about...</a>
+                    <br />
+                    It works because of <a href="http://api.wurstmineberg.de/">this</a>.
+                </p>
+            </footer>
+        </div>
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="assets/time.js"></script>
+    </body>
+</html>
