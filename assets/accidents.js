@@ -28,7 +28,7 @@ function getData() {
         dataType: 'json',
         error: function(request, status, error) {
             daysValue.html('??');
-            daysValue.attr('data-original-title', 'Could not load ' + apiURL);
+            daysValue.attr('data-original-title', 'Could not load API');
             plural.html('s');
         },
         success: function(data) {
@@ -45,6 +45,7 @@ function getData() {
             } else {
                 var days = Math.floor((new Date() - latestTimestamp) / 86400000);
                 daysValue.html(padNumber(days, 2));
+                daysValue.attr('data-original-title', 'These are real life days.');
                 if (days == 1) {
                     plural.html('');
                 } else {
